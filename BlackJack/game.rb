@@ -44,7 +44,7 @@ class Game
     loop do
       @interface.view_info(@player, @dealer, @bank)
       case @interface.choice
-      when 1 then return open_cards
+      when 1 then open_cards
       when 2 then dealer_turn
       when 3 then player_turn
       end
