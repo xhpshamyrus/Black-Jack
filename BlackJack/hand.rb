@@ -25,7 +25,7 @@ class Hand
 
   def count
     score > BLACK_JACK
-  end
+  end 
 
   def full?
     @cards.size >= MAX_CARDS
