@@ -35,7 +35,7 @@ class Player
 
   def cards_score
     @hand.score
-  end
+  end 
 
   def can_take_card?
     !@hand.full?
