@@ -103,7 +103,7 @@ class Interface
     puts PASS
   end
 
-  def play_again
+  def play_again 
     print PLAY_AGAIN
     gets.to_i
   end
