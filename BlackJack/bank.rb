@@ -22,7 +22,7 @@ class Bank
     player.add_cash(@bank / 2)
     dealer.add_cash(@bank / 2)
     @bank = 0
-  end
+  end 
 
   def have_money?(player)
     player.cash > BET
