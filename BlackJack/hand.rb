@@ -11,7 +11,7 @@ class Hand
   end
 
   def score
-    total = @cards.sum(& :point)
+    total = @cards.sum(&:point)
     @cards.each do |card|
       total -= ACE if total > BLACK_JACK && card.ace?
     end
