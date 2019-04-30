@@ -1,7 +1,7 @@
 class Card
   attr_reader :suit, :value, :point
 
-  SUITS = %w{♠ ♥ ♣ ♦}
+  SUITS = %w[♠ ♥ ♣ ♦]
   VALUES = {
       "2" => 2,
       "3" => 3,
