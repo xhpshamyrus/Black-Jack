@@ -87,8 +87,9 @@ class Game
   def count_points(player, dealer)
     return if @player.overload? && @dealer.overload?
     return if @player.cards_score == @dealer.cards_score
-    return @player if @player.cards_score > @dealer.cards_score || @dealer.overload?
-    return @dealer if @player.cards_score < @dealer.cards_score || @player.overload?
+    return @player if @dealer.overload?
+    return @dealer if @player.overload?
+    [@player, @dealer].max_by(&:cards_score)
   end
 
   def result
